@@ -1,0 +1,384 @@
+/* =====================
+    Custom font configuration
+======================== */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+
+/* ===========================
+    Custom font configuration
+=============================== */
+@font-face {
+    font-family: gismo;
+    src: url(../fonts/gismo.ttf);
+    src: url(../fonts/gismo.eot);
+}
+
+@font-face {
+    font-family: caviar;
+    src: url(../fonts/caviar.ttf);
+}
+
+.font-1 {
+
+    font-size: 22px;
+    color: #000;
+    padding: 0 40px;
+    font-weight: 400;
+}
+
+.font-2 {
+
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.font-3 {
+
+    font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+
+
+/* ===========================
+    local css
+=============================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+
+/* ===========================
+.header-top-section
+=============================== */
+.header-top-section {
+    background-color: #000;
+    font-size: 16px;
+
+
+}
+
+.header-top-section a {
+    color: #fff;
+}
+
+.col-right ul {
+    padding-right: px;
+}
+
+.col-right .nav-link {
+    padding: 5px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto 10px;
+    margin-bottom: 4px;
+
+}
+
+/* ===========================
+main menu part
+=============================== */
+.main-menu ul li a {
+    position: relative;
+
+}
+
+.main-menu ul li a::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.1);
+    transition: all .4s cubic-bezier(.68, -0.55, .27, 1.55);
+
+}
+
+.main-menu ul li a:hover:after {
+    transform: scale(0.7);
+}
+
+
+
+
+
+
+/* ===========================
+Banner part
+=============================== */
+.banner-part {
+    position: relative;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+.btn-custom {
+    border: 2px solid white;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    transition: all .2s ease;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.btn-custom:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.btn-custom::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 100px;
+    background: #fff;
+    left: -55px;
+    top: -8px;
+    transform: rotate(-45deg);
+    transition: all .5s ease;
+
+}
+
+.btn-custom:hover::after {
+    left: 490px;
+    top: -8px;
+    transform: rotate(90deg);
+
+}
+
+/* ===========================
+MEN part
+=============================== */
+/* overlay affect start */
+.gallery {
+    position: relative;
+    transition: all 1s ease;
+}
+
+.gallery::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 5, 0.185);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    
+
+}
+
+/* overlay affect end */
+
+.gallery h2{
+    position: absolute;
+    color: #fff;
+    left: 80px;
+    bottom: 80px;
+    z-index: 1;
+    opacity: 1;
+    font-size: 3em;
+    transition: all 0.6s ease;
+    
+    
+
+}
+
+.gallery a{
+    position: absolute;
+    color: #fff;
+    bottom: 80px;
+    left: 80px;
+    z-index: 1;
+    font-size: 3em;
+    line-height: 1;
+    font-weight: 100;
+    text-decoration: none;
+    opacity: 0;
+    transition: all 0.5 ease;
+}
+
+.gallery:hover h2{
+    opacity: 0;
+}
+.gallery:hover a{
+    opacity: 1;
+}
+
+.gallery::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    border: 1px solid white;
+    transition: all .5s ease-in-out;
+
+}
+
+.gallery:hover::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.9);
+    border: 1px solid white;
+
+}
+
+/* women part */
+.women-gallery {
+    position: relative;
+    transition: all 1s ease;
+}
+
+.women-gallerygallery::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 5, 0.185);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    
+
+}
+.women-gallery h2{
+    position: absolute;
+    color: red;
+    left: 80px;
+    bottom: 80px;
+    z-index: 1;
+    opacity: 1;
+    font-size: 3em;
+    transition: all 0.6s ease;
+    
+    
+
+}
+
+.women-gallery a{
+    position: absolute;
+    color: red;
+    bottom: 80px;
+    left: 80px;
+    z-index: 1;
+    font-size: 3em;
+    line-height: 1;
+    font-weight: 100;
+    text-decoration: none;
+    opacity: 0;
+    transition: all 0.5 ease;
+}
+
+.women-gallery:hover h2{
+    opacity: 0;
+}
+.women-gallery:hover a{
+    opacity: 1;
+}
+
+.women-gallery::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+   
+    transition: all .4s ease-in;
+
+}
+
+
+.women-gallery:hover::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.9);
+    border-bottom: 5px solid red;
+
+}
+
+.women-gallery:hover::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.9);
+    border-left: 5px solid red;
+
+}
+.women-gallery:hover::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.9);
+    border-right: 5px solid red;
+
+}
+
+.women-gallery1:hover::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.9);
+    border-top: 5px solid red;
+
+}
+
+
+
